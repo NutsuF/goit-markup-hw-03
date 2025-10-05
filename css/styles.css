@@ -1,20 +1,51 @@
+/*Normalize*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+
+/* Глобальный сброс отступов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ------------------ Body ------------------ */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
-ul,
-ol {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-/*Header*/
+
+/* ------------------ Header ------------------ */
 .header-page {
+  border-bottom: 1px solid #ccc;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -35,21 +66,11 @@ a {
 }
 
 .nav-list {
+  display: flex;
 }
 
 .nav-item {
-}
-/*main-section*/
-.section-menu {
-  background-color: #2e2f42;
-}
-.section-title {
-  font-size: 56px;
-  line-height: 107%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-  text-transform: capitalize; /* ← додали */
+  margin-left: 20px;
 }
 
 .nav-link {
@@ -59,98 +80,113 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+/* ------------------ Buttons ------------------ */
 .title-btn {
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
 }
 
-.title-btn {
-  cursor: pointer;
-}
 .title-btn:hover,
 .title-btn:focus {
   background-color: #404bbf;
 }
-/*Advantages section*/
+
+/* ------------------ Main Section ------------------ */
+.section-menu {
+  background-color: #2e2f42;
+}
+
+.section-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* ------------------ Advantages Section ------------------ */
 .advantages {
 }
+
 .advantages-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .advantages-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-/*Team section*/
+/* ------------------ Team Section ------------------ */
 .team {
   background-color: #f4f4fd;
   text-transform: capitalize;
 }
+
 .team-icon {
   background-color: #ffffff;
 }
 
 .team-list {
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  text-transform: capitalize;
   color: #2e2f42;
   background-color: #ffffff;
 }
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }
+
 .team-title {
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.address-link:hover,
-.address-link:focus,
-.title-btn:hover,
-.title-btn:focus {
-  color: #404bbf;
-}
-
-/*Portfoli list*/
+/* ------------------ Portfolio Section ------------------ */
 .portfolio {
   font-weight: 700;
   font-size: 36px;
-  text-transform: capitalize;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
 }
+
 .portfolio-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   background-color: #ffffff;
@@ -159,64 +195,66 @@ a {
 .portfolio-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-/*addres-list*/
+/*------------------- portfolio-card---------------------*/
+.portfolio-card {
+  border-bottom: 1px solid #ccc;
+}
+
+/* ------------------ Address Section ------------------ */
 .address {
   font-style: normal;
 }
 
-.address-list {
-}
-
-.address-item {
-}
-
 .address-link {
   font-size: 16px;
-  /* line-height: 24px; */
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* ------------------ Footer ------------------ */
 .page-footer {
   background-color: #2e2f42;
 }
+
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
+
 .footer-item {
   font-size: 16px;
-  /* line-height: 24px; */
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
-/*  font-family: "Roboto",
- sans-serif;
- font-family: "Raleway",
- sans-serif;    
- 
- /*
-/* .footer {
-     background-color: slategray;
- }
+/* ------------------ Visually Hidden ------------------ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
- .logo {
-     font-family: sans-serif;
-     text-transform: uppercase;
-     font-size: 20px;
-     color: darkblue;
- }
+/* ------------------ Section Padding ------------------ */
+.section {
+  padding: 120px 0;
+}
 
- .logo-light {
-     color: white;
- }
-
- .logo-dark {
-     color: rgb(70, 70, 72);
- }*/
+/* ------------------ Container ------------------ */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
