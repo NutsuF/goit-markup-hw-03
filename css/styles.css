@@ -195,6 +195,10 @@ img {
 }
 
 /* ------------------ Team Section ------------------ */
+.team-list li:first-child {
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden; 
+}
 .section-team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -225,6 +229,7 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
+
 }
 
 .team-title {
@@ -233,9 +238,16 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  
 }
-
+.team-icon{
+  background-color: white;
+}
+.icone{
+  padding: 32px 0;
+}
 /* ------------------ Portfolio Section ------------------ */
+
 .portfolio-menu{
   padding-top: 120px;
   padding-bottom: 120px;
@@ -282,11 +294,10 @@ img {
 
 .footer-logo .logo-part {
   color: #f4f4fd;
-}
-.logo .footer-logo{
   inset-block;
   margin-bottom: 16px;
 }
+
 .footer-item {
   font-size: 16px;
   line-height: 1.5;
