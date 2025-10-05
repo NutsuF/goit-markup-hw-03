@@ -35,6 +35,11 @@ ol {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* ------------------ Container ------------------ */
 .container {
@@ -132,6 +137,8 @@ a {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+  min-width: 169px;
 }
 
 .title-btn:hover,
@@ -156,6 +163,10 @@ a {
 }
 
 /* ------------------ Advantages Section ------------------ */
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .advantages-list {
   display: flex;
   gap: 24px;
@@ -186,6 +197,8 @@ a {
 /* ------------------ Team Section ------------------ */
 .section-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-page {
@@ -223,6 +236,13 @@ a {
 }
 
 /* ------------------ Portfolio Section ------------------ */
+.portfolio-menu{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-central{
+  margin-bottom: 72px;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -263,7 +283,10 @@ a {
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
-
+.logo .footer-logo{
+  inset-block;
+  margin-bottom: 16px;
+}
 .footer-item {
   font-size: 16px;
   line-height: 1.5;
