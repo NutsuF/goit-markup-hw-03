@@ -306,6 +306,7 @@ img {
   background-color: #fff;
   text-align: center;
   box-sizing: border-box;
+}
 /* ------------------ Footer ------------------ */
 .page-footer {
   background-color: #2e2f42;
@@ -316,21 +317,15 @@ img {
   color: #f4f4fd;
 }
 .footer-logo {
-  display: block;
-  font-size: 24px;
-  font-weight: 700;
-  color: #4d5ae5;
-  margin-bottom: 16px;
-  text-decoration: none;
+   display: inline-block;  
   margin-bottom: 16px;
 }
 .footer-item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: white;
+  color: #f4f4fd;
   max-width: 264px;
-  margin-bottom: 16px;
 }
 .logo-part {
   display: inline-block; /* блочные свойства */
