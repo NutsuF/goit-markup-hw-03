@@ -1,11 +1,4 @@
 /* ------------------ Normalize ------------------ */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 /* ------------------ Body ------------------ */
 body {
@@ -244,8 +237,9 @@ img {
   overflow: hidden;
 }
 .team-icon {
-  background-color: white;
-  padding: 32px 0;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 .team-item {
   padding: 32px 0;
@@ -254,16 +248,15 @@ img {
 /* ------------------ Portfolio Section ------------------ */
 
 .portfolio-menu {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: center;
-  margin-bottom: 72px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .portfolio-central {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   margin-bottom: 72px;
 }
 .portfolio-list {
@@ -275,11 +268,6 @@ img {
 }
 .portfolio-icon {
   width: calc((100% - 48px) / 3);
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  background-color: #fff;
-  text-align: center;
 }
 .portfolio-name {
   font-weight: 500;
@@ -297,15 +285,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
 }
 .portfolio-item {
-  padding: 32px 16px;          
-  border: 1px solid #e7e9fc;  
-  border-top: none;             
-  background-color: #fff;
-  text-align: center;
-  box-sizing: border-box;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 /* ------------------ Footer ------------------ */
 .page-footer {
@@ -317,8 +301,14 @@ img {
   color: #f4f4fd;
 }
 .footer-logo {
-   display: inline-block;  
+  display: inline-block;
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 .footer-item {
   font-size: 16px;
@@ -328,11 +318,9 @@ img {
   max-width: 264px;
 }
 .logo-part {
-  display: inline-block; /* блочные свойства */
-  margin-bottom: 16px; /* отступ снизу */
-  color: white
   text-decoration: none;
 }
+
 /* ------------------ Visually Hidden ------------------ */
 .visually-hidden {
   position: absolute;
