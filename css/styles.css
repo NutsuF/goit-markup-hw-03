@@ -258,6 +258,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 72px;
+  text-align: center;
 }
 .portfolio-list {
   display: flex;
@@ -301,6 +302,7 @@ img {
   color: #f4f4fd;
 }
 .footer-logo {
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   margin-bottom: 16px;
   font-weight: 700;
